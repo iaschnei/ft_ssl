@@ -21,7 +21,7 @@ int main(int ac, char **av) {
 
     switch (algo_to_use) {
         case MD_5:
-            md_5(ac, av);
+            md5(ac, av);
             break;
         default:
             return (1);

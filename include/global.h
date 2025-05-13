@@ -3,6 +3,7 @@
 
 #include <unistd.h>
 #include <stdio.h>
+#include <string.h>
 
 int arg_parsing(int ac, char **av);
 

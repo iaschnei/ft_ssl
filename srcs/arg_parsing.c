@@ -3,7 +3,7 @@
 static int known_command(char *command);
 
 //! This is going to change as more algos are added
-static char available_commands[1] = {"md5"};
+static char *available_commands[1] = {"md5"};
 
 int arg_parsing(int ac, char **av) {
 
@@ -17,11 +17,11 @@ int arg_parsing(int ac, char **av) {
     if (command == -1) {
         write(1, "Unknown command '", 17);
         write(1, av[1], strlen(av[1]));
-        write(1, "'. Available commands:\n", 23);
+        write(1, "'.\n\nAvailable commands:\n", 25);
         write(1, "md5\n", 4);
         // More to come
-        write(1, "Available flags:\n", 17);
-        write(1, "-p -q -r -s\n", 11);
+        write(1, "\nAvailable flags:\n", 18);
+        write(1, "-p -q -r -s\n", 12);
     }
 
     return (command);
