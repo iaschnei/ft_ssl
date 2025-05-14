@@ -2,6 +2,13 @@
 
 static int known_command(char *command);
 
+
+
+//TODO: This needs to be a lot more complete, check for command but also check for flags, check if files can be opened
+//TODO: Then fill a linked list with every argument that matches a file or a string like this :
+
+// struct { char *content; struct* next; }
+
 //! This is going to change as more algos are added
 static char *available_commands[1] = {"md5"};
 
