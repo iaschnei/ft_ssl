@@ -4,6 +4,7 @@
 #include <unistd.h>
 #include <stdio.h>
 #include <string.h>
+#include <stdbool.h>
 
 // Note: some algorithms will accept some flags but not others
 typedef struct s_flags {
